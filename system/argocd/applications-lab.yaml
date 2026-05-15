@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: lab-front
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: "https://github.com/fernandojsj/lab-local.git"
+        revision: main
+        directories:
+          - path: "lab/front/*"
+  template:
+    metadata:
+      name: "{{path.basename}}-front-lab"
+      namespace: argocd
+    spec:
+      project: default
+      source:
+        repoURL: "https://github.com/fernandojsj/lab-local.git"
+        targetRevision: main
+        path: "{{path}}"
+        helm:
+          releaseName: "{{path.basename}}"
+      destination:
+        server: "https://kubernetes.default.svc"
+        namespace: lab-front
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=true

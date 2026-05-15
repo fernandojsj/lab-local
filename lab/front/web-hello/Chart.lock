@@ -1,0 +1,6 @@
+dependencies:
+- name: my-frontend
+  repository: oci://registry-1.docker.io/fernandojsj
+  version: 0.1.0
+digest: sha256:6bb641db4ab97521bdfd6377fb0b9435bbcdcb74b2c48fead02e1e7b855b4be0
+generated: "2026-05-15T18:39:53.108227484-03:00"

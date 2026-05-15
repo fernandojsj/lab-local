@@ -1,0 +1,3 @@
+# Ignorar charts baixados localmente — o Chart.lock já garante a versão
+lab/front/*/charts/
+lab/back/*/charts/
