@@ -1,0 +1,9 @@
+apiVersion: v2
+name: api-hello
+description: Wrapper da API api-hello
+type: application
+version: 0.1.0
+dependencies:
+  - name: my-backend
+    version: "0.1.0"
+    repository: "oci://registry-1.docker.io/fernandojsj"
