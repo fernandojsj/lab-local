@@ -1,0 +1,8 @@
+my-frontend:
+  image:
+    repository: httpd
+    tag: "2.4"
+  replicaCount: 1
+  ingress:
+    enabled: true
+    host: web-apache.127.0.0.1.nip.io
