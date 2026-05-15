@@ -2,7 +2,7 @@ my-frontend:
   image:
     repository: nginxdemos/hello
     tag: latest
-  replicaCount: 2
+  replicaCount: 1
   ingress:
     enabled: true
     host: web-hello.127.0.0.1.nip.io
