@@ -1,13 +1,10 @@
 my-backend:
   image:
-    repository: hashicorp/http-echo
+    repository: stefanprodan/podinfo
     tag: latest
-  containerPort: 5678
+  containerPort: 9898
   service:
-    port: 5678
-  env:
-    APP_MESSAGE: "ola do backend!"
-    APP_ENV: "lab"
+    port: 9898
   ingress:
     enabled: true
     host: api-hello.127.0.0.1.nip.io
