@@ -1,0 +1,9 @@
+apiVersion: v2
+name: api-hello-dashboard
+description: Dashboard Grafana do serviço api-hello (podinfo)
+type: application
+version: 0.1.0
+dependencies:
+  - name: my-dashboards
+    version: "0.1.0"
+    repository: "oci://registry-1.docker.io/fernandojsj"

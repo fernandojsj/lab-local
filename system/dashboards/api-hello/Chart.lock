@@ -1,0 +1,6 @@
+dependencies:
+- name: my-dashboards
+  repository: oci://registry-1.docker.io/fernandojsj
+  version: 0.1.0
+digest: sha256:2f086c633995690dee8ba5f413438a3cf2e60f574bafcce82533d7fdd70bda92
+generated: "2026-05-18T11:03:08.382913212-03:00"
