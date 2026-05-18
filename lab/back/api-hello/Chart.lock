@@ -1,6 +1,6 @@
 dependencies:
 - name: my-backend
   repository: oci://registry-1.docker.io/fernandojsj
-  version: 0.2.0
-digest: sha256:2b765e25e68571967733cc70bfd9ea917773e897865125298731a9c7a31a440b
-generated: "2026-05-18T10:42:32.239357589-03:00"
+  version: 0.2.1
+digest: sha256:5beffdf65b1e0f79c364eb37afef8767768559236cf3ccbe7d0369847d4f2813
+generated: "2026-05-18T10:47:23.081113737-03:00"
