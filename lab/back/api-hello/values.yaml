@@ -11,3 +11,10 @@ my-backend:
   ingress:
     enabled: true
     host: api-hello.127.0.0.1.nip.io
+  serviceMonitor:
+    enabled: true
+    namespace: metrics
+    path: /metrics
+    interval: 30s
+    labels:
+      release: lens-metrics
